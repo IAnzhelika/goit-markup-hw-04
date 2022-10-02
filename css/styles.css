@@ -195,19 +195,22 @@ padding-top: 24px;
   
   .overlay{
    max-width: 1600px;
-      background: linear-gradient(rgba(0, 0, 0, 0.12));
+      
       height: 600px;
      margin-left: auto;
      margin-right: auto;
      outline:1px solid black;
-     background: linear-gradient( rgba(0, 0, 0, 0.12) 
-     );
+    
+      background-image: linear-gradient( to right 
+      rgba(0, 0, 0, 0.6)
+      rgba(0, 0, 0, 0.6)
+       );
      background-image : 
      url(/image/page1.jpg);
     
-     background-blend-mode: darken;
+     /*background-blend-mode: darken;
      background-repeat: no-repeat;
-      background-position: center;
+      background-position: center;*/
     
     
      
@@ -319,16 +322,26 @@ padding-top: 24px;
     }
      .textlink {
       display: flex;
-           
-         }
-       .section-benehist:not(:last-child) {
+      _
+     }
+   .sectian-benehist{
+      width: 270px;
+      height: 79px;
+   }
+         
+       .sectian-benehist:not(:last-child) {
         margin-right: 30px;
           }
-    .section-benehist{
+    .sectian-benehist{
       flex-basis: calc((100% - 90px) / 4);
     }
-    .benehist-list{
-   
+    .sectian-benehist:before{
+      display: block;
+      content: "";
+     
+     height: 120px;
+    border-radius: 4px;
+      background-image: url(/image/people3.jpg);
     }
 
     .benehist-list{
